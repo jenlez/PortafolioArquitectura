@@ -47,6 +47,15 @@
     padding: 20px;
 }
 
+.menuitems{
+    transition: 0.5s;
+}
+
+.menuitems:hover {
+    transform: scale(1.1);
+}
+
+
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -93,13 +102,18 @@ a {
     width: 680px;
     height: 480px;
     object-fit: cover;
+    transition: 0.5s;
+}
+
+.galeriaImg:hover {
+    transform: scale(1.1);
 }
 
 
 /* perfil */
 
 .sobreMi {
-    background-color: gray;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     margin-top: 20 px;
     margin-bottom: 20 px;
     padding: 10 px;
@@ -136,6 +150,12 @@ a {
     border-radius: 10px;
     text-align: center;
     align-content: center;
+
+    transition: all 0.5s;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* primercard*/
@@ -171,7 +191,13 @@ a {
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s;
 }
+
+.cardBoton:hover {
+    transform: scale(1.1);
+}
+
 
 
 /*servicios*/
@@ -192,6 +218,11 @@ a {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.cardServicios:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .cardServiciosTitulo {
@@ -208,7 +239,8 @@ a {
 }
 
 .llamadoAccion {
-    background-color: rgb(66, 66, 66);
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
     color: white;
     padding: 20px;
     padding-top: 40px;
@@ -236,7 +268,13 @@ a {
     background: rgba(220, 220, 220, 0.592);
     border-radius: 3px;
     cursor: pointer;
+    transition: 0.5s;
 }
+
+.llamadoAccionBoton:hover {
+    transform: scale(1.1);
+}
+
     
 
 /*---PROYECTOS PAGINA -------------------------------*/
