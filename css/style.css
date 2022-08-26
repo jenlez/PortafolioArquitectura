@@ -27,7 +27,6 @@
     display: flex;
     position: fixed;
     width: 100%;
-    padding: 5PX;
 }
 
 .navbar {
@@ -58,7 +57,7 @@
 
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+ 
 }
 
 
@@ -71,7 +70,7 @@ a {
 .banner {
     background-image: url(../img/banner-1.jpg);
     background-size: cover;
-    height: 900px;
+    height: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
