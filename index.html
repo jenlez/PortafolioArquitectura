@@ -8,6 +8,9 @@
     <title>Arquitecta Diseñadora Frelance</title>
 
     <!--Estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -22,11 +25,11 @@
 
         <nav class="navbar">
             <ul class="menu">
-                <li class="menuitems"><a href="./index.html">Inicio</a></li>
-                <li class="menuitems"><a href="./Proyectos.html">Proyectos</a></li>
-                <li class="menuitems"><a href="./Servicios.html">Servicios</a></li>
-                <li class="menuitems"><a href="./Sobre mi.html">Sobre mi</a></li>
-                <li class="menuitems"><a href="./Contacto.html">Contacto</a></li>
+                <li><a class="menuitems" href="./index.html">Inicio</a></li>
+                <li><a class="menuitems" href="./Proyectos.html">Proyectos</a></li>
+                <li><a class="menuitems" href="./Servicios.html">Servicios</a></li>
+                <li><a class="menuitems" href="./Sobre mi.html">Sobre mi</a></li>
+                <li><a class="menuitems" href="./Contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -35,106 +38,167 @@
         <!--banner-->
 
         <section class="banner">
-            <div class="fraseBienvenida ">
+            <div>
                 <div>
-                    <h2>Pasion por </h2>
+                    <h2 class="fraseBienvenida"> Arquitectura </h2>
                 </div>
                 <div>
-                    <h3>el diseño. </h3>
+                    <h3 class="fraseBienvenida"> y Pasion por </h3>
+                </div>
+                <div>
+                    <h3 class="fraseBienvenida">el diseño. </h3>
                 </div>
                 <div class="divider"></div>
             </div>
             <!--falta darle salto de linea y background-->
         </section>
 
+        <!--Sobre mi trabajo-->
+
+        <section id="sobremi">
+            <div class="contenedorFoto">
+                <img src="img/foto-perfil.png" alt="">
+            </div>
+            <div class="sobremi">
+                <p class="tituloSeccion">Sobre Mi</p>
+                <div class="divider"></div>
+                <h2>Hola, Soy <span>Angela Ruiz</span> </h2>
+                <h3>Arquitecta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit voluptatibus
+                    blanditiis nulla adipisci iste fuga expedita, ea exercitationem dicta, similique rem, atque soluta
+                    recusandae ipsam autem. Sapiente, quo ducimus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natus.</p>
+                <a href="#">Descargar CV</a>
+            </div>
+        </section>
+
         <!--Imagenes portafolio-->
 
         <section class="imagenesmenu">
 
+            <div class="tituloSeccionProyectos">
+                <h2> Proyectos </h2>
+                <div class="divider"></div>
+            </div>
+
             <div class="imagenes">
-                <img class= "galeriaImg"src="img/Recurso-1.png" alt="restaurante">
-                <img class= "galeriaImg"src="img/Recurso-2.png" alt="sala">
-                <img class= "galeriaImg"src="img/Recurso-3.png" alt="exterior">
-                <img class= "galeriaImg"src="img/Recurso-4.png" alt="sala reuniones">
-                <img class= "galeriaImg"src="img/Recurso-5.png" alt="oficina">
-                <img class= "galeriaImg"src="img/Recurso-6.png" alt="comedor">
+                <img class="galeriaImg" src="img/Recurso-1.png" alt="restaurante">
+                <img class="galeriaImg" src="img/Recurso-2.png" alt="sala">
+                <img class="galeriaImg" src="img/Recurso-3.png" alt="exterior">
+                <img class="galeriaImg" src="img/Recurso-4.png" alt="sala reuniones">
+                <img class="galeriaImg" src="img/Recurso-5.png" alt="oficina">
+                <img class="galeriaImg" src="img/Recurso-6.png" alt="comedor">
             </div>
 
         </section>
 
-        <!--Sobre mi trabajo-->
+        <section class="imagenesmenu container-fluid">
 
-        <section class="sobreMi">
+            <div class="row">
+                <div
+                    class="col-md-7 bg-secondary text-dark bg-opacity-10 d-flex justify-content-center align-items-center">
+                    <div class="row ">
+                        <div class="col-md-12">
 
-            <div class="sobreMiTitulo">
-                <h3>Sobre mi trabajo</h3>
-                <div class="divider" style="background-color:gainsboro ;"></div>
+                            <h2 class="titulotextoParrafoPortafolio">Como trabajo</h2>
+                           
+                            <p class="textoParrafoPortafolio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam recusandae, voluptatum
+                                quae minima, enim quidem ab error ipsa quam distinctio nam omnis quis consequatur magni
+                                assumenda voluptates dicta saepe quisquam! Ab dolor accusamus fuga tempora, corrupti at
+                                aspernatur beatae laborum libero obcaecati est saepe dolores neque. Provident est
+                                officia aliquam.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Recurso-1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Recurso-2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Recurso-3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Recurso-4.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <div class="sobreMiCards">
-
-                <div class="card">
-                    <h1 class="cardTitulo">Arquitecta Diseñadora Freelance </h1>
-                    <h2 class="cardNombre">Angela Ruiz </h2>
-                </div>
-
-                <div class="card">
-                    <p class="cardDescripcion">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora tempore obcaecati
-                        alias praesentium, hic possimus quo dolorum iste quasi id iusto sit optio sequi quam eos sunt
-                        doloremque. Ullam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque enim
-                        delectus, neque placeat animi nemo eligendi accusamus, nobis ea ipsum autem illum porro ut harum
-                        similique deserunt repudiandae dolore maiores?
-                    </p>
-                    <button class="cardBoton">Portafolio</button>
-                </div>
-
-                <div class="card">
-                    <img class=cardFotoPerfil src="./img/foto-perfil -small.png" alt="">
-                    <p class="cardDescripcion">
-                        Conoce mas detalles sobre mi formacion y experiencia profesional:
-                    </p>
-                    <button class="cardBoton">Conocer mas</button>
-                </div>
-            </div>
         </section>
 
 
         <!--Servicios-->
 
+        
         <section class="servicios">
 
-            <div class="serviciosTitulo">
-                <h3>Servicios</h3>
+            <div class="tituloSeccionProyectos">
+                <h2> Servicios </h2>
                 <div class="divider"></div>
             </div>
 
-            <div class="cardServiciosContenedor">
+            <div class="row d-flex justify-content-center align-items-center">
 
-                <div class="cardServicios">
-                    <h4 class="cardServiciosTitulo">Gestion de proyectos</h4>
-                    <P class="cardDescripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto,
-                        molestiae! Rerum blanditiis ad unde atque eum. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Nostrum animi quas impedit quidem, dicta quibusdam eaque dolorum tempore.
-                        Repudiandae magni ut expedita sunt odio vitae ducimus nisi et vel praesentium. </P>
+                <div class="card" style="width: 20rem;">
+                    <img src="/img/portafolio/cafeteria.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestion de proyectos</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content</p>
+                    </div>
                 </div>
-
-                <div class="cardServicios">
-                    <h4 class="cardServiciosTitulo">Diseño de interiores y Mobiliario</h4>
-                    <P class="cardDescripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto,
-                        molestiae! Rerum blanditiis ad unde atque eum. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Atque soluta nesciunt sint aperiam eligendi blanditiis quos nobis distinctio
-                        perferendis. Magni repudiandae debitis excepturi, ad reiciendis vitae molestias nihil rerum
-                        eveniet.</P>
+                <div class="card" style="width: 20rem;">
+                    <img src="/img/portafolio/pasillo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Diseño de interiores y Mobiliario</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content</p>
+                    </div>
                 </div>
+                <div class="card" style="width: 20rem;">
+                    <img src="/img/portafolio/salon.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Seguimiento de obra</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content</p>
+                    </div>
 
-                <div class="cardServicios">
-                    <h4 class="cardServiciosTitulo">Seguimiento de obra</h4>
-                    <P class="cardDescripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto,
-                        molestiae! Rerum blanditiis ad unde atque eum. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Eius, repellendus molestiae asperiores placeat adipisci saepe natus voluptates
-                        possimus atque sunt tenetur distinctio quasi quo. Fuga culpa aliquid autem ullam perferendis.
-                    </P>
                 </div>
 
             </div>
@@ -158,6 +222,9 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
 </body>
 
