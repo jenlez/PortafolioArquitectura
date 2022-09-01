@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+*::-moz-selection {
+  background-color: black;
+  color: white;
+}
+*::selection {
+  background-color: black;
+  color: white;
+}
+
+.divider {
+  height: 5px;
+  width: 100px;
+  background-color: #565656;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.encabezado {
+  background-color: #171717;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 5PX;
+}
+.encabezado .logo {
+  width: 300px;
+  height: 70px;
+}
+.encabezado .navbar {
+  width: 100%;
+}
+.encabezado .navbar .menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px;
+}
+.encabezado .navbar .menu .menuitems {
+  text-decoration: none;
+  color: #EDEDED;
+  transition: 0.5s;
+}
+.encabezado .navbar .menu .menuitems:hover {
+  color: #B2B1B9;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner-1.bak.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  padding: 40px;
+}
+.banner .fraseBienvenida {
+  color: #171717;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#sobremi {
+  max-width: 100%;
+  margin: auto;
+  padding: 100px;
+  color: #171717;
+  display: flex;
+}
+#sobremi .contenedorFoto {
+  max-width: 400px;
+  margin-right: 80px;
+}
+#sobremi .contenedorFoto img {
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #EDEDED;
+}
+#sobremi .sobremi {
+  margin: 0 40px;
+}
+#sobremi .sobremi .tituloSeccion {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #171717;
+}
+#sobremi .sobremi h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 40px 0;
+  letter-spacing: 2px;
+}
+#sobremi .sobremi h2 span {
+  color: #565656;
+}
+#sobremi .sobremi h3 {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#sobremi .sobremi p {
+  font-size: 25px;
+  line-height: 25px;
+  color: #565656;
+  margin-bottom: 12px;
+}
+#sobremi .sobremi a {
+  display: inline-block;
+  text-decoration: none;
+  color: #171717;
+  border-radius: 30px;
+  border: 1px solid #171717;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+#sobremi .sobremi a:hover {
+  background-color: #171717;
+  color: #EDEDED;
+}
+
+.tituloSeccionProyectos {
+  margin-left: 620px;
+  margin-bottom: 50px;
+}
+
+.imagenes {
+  display: flex;
+  padding: 30px;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 30px;
+  border-radius: 20px;
+  height: 100%;
+}
+.imagenes .galeriaImg {
+  width: 680px;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.imagenes:hover {
+  transform: scale(1.1);
+}
+
+.titulotextoParrafoPortafolio {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.textoParrafoPortafolio {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.servicios {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 30px;
+}
+
+.footer {
+  padding: 20px;
+}
+.footer .llamadoAccion {
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply;
+  color: #EDEDED;
+  padding: 20px;
+  padding-top: 40px;
+  height: 200px;
+  text-align: center;
+}
+.footer .llamadoAccion .llamadoAccionTitulo {
+  font-size: 25px;
+}
+.footer .llamadoAccion .llamadoAccionBoton {
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #EDEDED;
+  border-radius: 30px;
+  border: 1px solid #171717;
+  background-color: #171717;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.footer .llamadoAccion:hover {
+  background-color: #EDEDED;
+  color: #171717;
+}
+.footer .derechosAutor {
+  background-color: #B2B1B9;
+  padding: 20px;
+  height: 100px;
+  text-align: center;
+}
+
+.portafolio .portafolioHeadings {
+  padding: 40px;
+  padding-top: 160px;
+}
+.portafolio .portafolioHeadings h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.imagenes .galeriaImgProyectos {
+  width: 700px;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.serviciosPag {
+  padding: 40px;
+  padding-top: 160px;
+}
+.serviciosPag .serviciosTituloPag {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+.serviciosPag .cardServiciosContenedor {
+  padding: 20px;
+  padding-top: 40px;
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  justify-content: center;
+}
+.serviciosPag .cardServiciosContenedor .cardServicios {
+  width: 100%;
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.serviciosPag .cardServiciosContenedor .cardServicios:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.serviciosPag .cardServiciosContenedor .cardServicios .cardServiciosTitulo {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.sobreMiMain {
+  padding-top: 150px;
+}
+.sobreMiMain .sobreMiContenedor {
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: #B2B1B9;
+}
+.sobreMiMain .sobreMiContenedor .infoContenedor {
+  padding-bottom: 30px;
+}
+.sobreMiMain .sobreMiContenedor .infoContenedor h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+.sobreMiMain .sobreMiContenedor .infoContenedor p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.sobreMiMain .sobreMiContenedor .infoContenedor .botonDescargarCv {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  outline: 0px;
+  background: #565656;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.sobreMiMain .sobreMiContenedor .infoImagen {
+  width: 495px;
+  border: 7px solid #565656;
+  align-items: center;
+  align-content: center;
+}
+
+.contactoContainer {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding-top: 150px;
+  margin-bottom: 90px;
+}
+.contactoContainer .info-form h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+.contactoContainer .info-form p {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.contactoContainer .info-form h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.contactoContainer .form .campoContacto, .contactoContainer .form textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid #EDEDED;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.contactoContainer .form .botonEnviar {
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+  outline: 0px;
+  background: #B2B1B9;
+  border-radius: 3px;
+  cursor: pointer;
+}/*# sourceMappingURL=estilo.css.map */

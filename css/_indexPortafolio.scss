@@ -1,0 +1,40 @@
+.tituloSeccionProyectos {
+
+    margin-left: 620px;
+    margin-bottom: 50px;
+}
+
+
+.imagenes {
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 30px;
+    border-radius: 20px;
+    height: 100%;
+
+    .galeriaImg {
+        width: 680px;
+        height: 480px;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.titulotextoParrafoPortafolio{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.textoParrafoPortafolio {
+    font-weight: 400;
+    font-size: 30px;
+}

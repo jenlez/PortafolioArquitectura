@@ -1,0 +1,40 @@
+.serviciosPag {
+    padding: 40px;
+    padding-top: 160px;
+
+    .serviciosTituloPag {
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+
+    .cardServiciosContenedor {
+        padding: 20px;
+        padding-top: 40px;
+        display: flex;
+        overflow: hidden;
+        gap: 20px;
+        justify-content: center;
+    
+        .cardServicios {
+            width: 100%;
+            background-color: gainsboro;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: all 0.5s;
+    
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            }
+    
+            .cardServiciosTitulo {
+                font-size: 25px;
+                margin-bottom: 15px;
+            
+            }
+    
+        }
+    }
+}
+
+

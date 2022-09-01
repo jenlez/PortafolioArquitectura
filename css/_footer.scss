@@ -1,0 +1,53 @@
+
+.footer {
+    padding: 20px;
+
+    .llamadoAccion {
+        background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+        background-blend-mode: multiply;
+        color: $colorBlanco;
+        padding: 20px;
+        padding-top: 40px;
+        height: 200px;
+        text-align: center;
+
+        .llamadoAccionTitulo {
+            font-size: 25px;
+        }
+
+        .llamadoAccionBoton {
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 15px;
+            display: inline-block;
+            text-decoration: none;
+            color: $colorBlanco;
+            border-radius: 30px;
+            border: 1px solid $colorNegro;
+            background-color: $colorNegro;
+            padding: 10px 20px;
+            margin-top: 30px;
+            transition: .5s;
+        }
+        
+        &:hover {
+            background-color: $colorBlanco;
+            color: $colorNegro;
+        
+        }
+        
+    }
+
+    .derechosAutor {
+        background-color: $colorGrisClaro;
+        padding: 20px;
+        height: 100px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+

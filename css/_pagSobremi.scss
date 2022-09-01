@@ -1,0 +1,63 @@
+.sobreMiMain {
+    padding-top: 150px;
+
+    .sobreMiContenedor {
+        width: 100%;
+        max-width: 1100px;
+        padding: 20px;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        background-color: $colorGrisClaro;
+
+        .infoContenedor {
+            padding-bottom: 30px;
+        
+            h2 {
+        
+                margin-bottom: 15px;
+                font-size: 40px;
+            }
+        
+            p {
+        
+                margin-bottom: 30px;
+                font-size: 20px;
+                line-height: 1.6;
+                padding-top: 40px;
+                padding-bottom: 30px;
+            
+            }
+
+            .botonDescargarCv {
+                padding: 15px;
+                font-size: 18px;
+                border: none;
+                outline: 0px;
+                background: $colorGrisOscuro;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        }
+        
+        .infoImagen {
+            width: 495px;
+            border: 7px solid $colorGrisOscuro;
+            align-items: center;
+            align-content: center;
+        }
+    
+    }
+}
+
+
+
+
+
+
+

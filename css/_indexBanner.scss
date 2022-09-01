@@ -1,0 +1,18 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/banner-1.bak.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding: 40px;
+
+    .fraseBienvenida {
+        color: $colorNegro;
+        font-size: 30px ;
+        font-weight: bold;
+    }
+}
