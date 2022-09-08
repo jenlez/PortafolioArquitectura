@@ -34,14 +34,8 @@
             
             }
 
-            .botonDescargarCv {
-                padding: 15px;
-                font-size: 18px;
-                border: none;
-                outline: 0px;
-                background: $colorGrisOscuro;
-                border-radius: 3px;
-                cursor: pointer;
+            a {
+                @extend %botonNegroBlanco;
             }
         }
         

@@ -16,26 +16,8 @@
         }
 
         .llamadoAccionBoton {
-            margin-top: 30px;
-            padding: 15px;
-            font-size: 15px;
-            display: inline-block;
-            text-decoration: none;
-            color: $colorBlanco;
-            border-radius: 30px;
-            border: 1px solid $colorNegro;
-            background-color: $colorNegro;
-            padding: 10px 20px;
-            margin-top: 30px;
-            transition: .5s;
+            @extend %botonNegroBlanco,
         }
-        
-        &:hover {
-            background-color: $colorBlanco;
-            color: $colorNegro;
-        
-        }
-        
     }
 
     .derechosAutor {

@@ -1,6 +1,5 @@
 .divider {
-    height: 5px;
-    width: 100px;
+    @include tamanos(100px,5px);
     background-color: $colorGrisOscuro;
     margin-top: 10px;
     margin-bottom: 10px;

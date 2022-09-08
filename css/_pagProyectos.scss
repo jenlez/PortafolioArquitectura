@@ -14,12 +14,26 @@
 .imagenes{
     
     .galeriaImgProyectos {
-        width: 700px;
-        height: 480px;
+        -webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+        animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
+
+        @include tamanos(700px,480px);
         object-fit: cover;
     }
 
+    @for $item from 1 through 12 {
+        .galeriaImgProyectos:nth-child(#{$item}) {
+            animation-delay: $item*0.5s;
+        }
+    }
+
 }
+
+
+ @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+ @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+
 
 
 

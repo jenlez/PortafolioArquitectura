@@ -5,3 +5,40 @@ $colorNegro : #171717;
 $colorBlanco : #EDEDED;
 $colorGrisClaro :#B2B1B9;
 $colorGrisOscuro : #565656;
+
+%botonBlancoNegro {
+
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: $colorNegro;
+    border-radius: 30px;
+    border: 1px solid $colorNegro;
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: .5s;
+
+    &:hover {
+        background-color: $colorNegro;
+        color: $colorBlanco;
+    }
+}
+
+%botonNegroBlanco {
+
+    @extend %botonBlancoNegro;
+
+    color: $colorBlanco;
+    background-color: $colorNegro;
+
+    &:hover {
+    background-color: $colorBlanco;
+    color: $colorNegro;
+
+    }
+}
+
+@mixin tamanos ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}

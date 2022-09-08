@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+.contactoContainer .form .botonEnviar, #sobremi .sobremi a, .sobreMiMain .sobreMiContenedor .infoContenedor a, .footer .llamadoAccion .llamadoAccionBoton {
+  font-size: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #171717;
+  border-radius: 30px;
+  border: 1px solid #171717;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.contactoContainer .form .botonEnviar:hover, #sobremi .sobremi a:hover, .sobreMiMain .sobreMiContenedor .infoContenedor a:hover, .footer .llamadoAccion .llamadoAccionBoton:hover {
+  background-color: #171717;
+  color: #EDEDED;
+}
+
+.sobreMiMain .sobreMiContenedor .infoContenedor a, .footer .llamadoAccion .llamadoAccionBoton {
+  color: #EDEDED;
+  background-color: #171717;
+}
+.sobreMiMain .sobreMiContenedor .infoContenedor a:hover, .footer .llamadoAccion .llamadoAccionBoton:hover {
+  background-color: #EDEDED;
+  color: #171717;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,19 +40,19 @@
 }
 
 .divider {
-  height: 5px;
   width: 100px;
+  height: 5px;
   background-color: #565656;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .encabezado {
+  width: 100%;
+  height: 80px;
   background-color: #171717;
   display: flex;
   position: fixed;
-  width: 100%;
-  height: 80px;
   padding: 5PX;
 }
 .encabezado .logo {
@@ -38,13 +63,13 @@
   width: 100%;
 }
 .encabezado .navbar .menu {
+  width: 100%;
+  height: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 50px;
-  width: 100%;
-  height: 100%;
   font-size: 18px;
   font-weight: 700;
   padding: 20px;
@@ -61,8 +86,8 @@
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner-1.bak.jpg);
   background-size: cover;
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -123,36 +148,21 @@
   color: #565656;
   margin-bottom: 12px;
 }
-#sobremi .sobremi a {
-  display: inline-block;
-  text-decoration: none;
-  color: #171717;
-  border-radius: 30px;
-  border: 1px solid #171717;
-  padding: 10px 20px;
-  margin-top: 30px;
-  transition: 0.5s;
-}
-#sobremi .sobremi a:hover {
-  background-color: #171717;
-  color: #EDEDED;
-}
-
 .tituloSeccionProyectos {
   margin-left: 620px;
   margin-bottom: 50px;
 }
 
 .imagenes {
+  width: 100%;
+  height: 100%;
   display: flex;
   padding: 30px;
-  width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
   overflow: hidden;
   gap: 30px;
   border-radius: 20px;
-  height: 100%;
 }
 .imagenes .galeriaImg {
   width: 680px;
@@ -161,7 +171,7 @@
      object-fit: cover;
   transition: 0.5s;
 }
-.imagenes:hover {
+.imagenes .galeriaImg:hover {
   transform: scale(1.1);
 }
 
@@ -197,24 +207,6 @@
 .footer .llamadoAccion .llamadoAccionTitulo {
   font-size: 25px;
 }
-.footer .llamadoAccion .llamadoAccionBoton {
-  margin-top: 30px;
-  padding: 15px;
-  font-size: 15px;
-  display: inline-block;
-  text-decoration: none;
-  color: #EDEDED;
-  border-radius: 30px;
-  border: 1px solid #171717;
-  background-color: #171717;
-  padding: 10px 20px;
-  margin-top: 30px;
-  transition: 0.5s;
-}
-.footer .llamadoAccion:hover {
-  background-color: #EDEDED;
-  color: #171717;
-}
 .footer .derechosAutor {
   background-color: #B2B1B9;
   padding: 20px;
@@ -232,12 +224,78 @@
 }
 
 .imagenes .galeriaImgProyectos {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   width: 700px;
   height: 480px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.imagenes .galeriaImgProyectos:nth-child(1) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.imagenes .galeriaImgProyectos:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.imagenes .galeriaImgProyectos:nth-child(3) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.imagenes .galeriaImgProyectos:nth-child(4) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.imagenes .galeriaImgProyectos:nth-child(5) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.imagenes .galeriaImgProyectos:nth-child(6) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.imagenes .galeriaImgProyectos:nth-child(7) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+.imagenes .galeriaImgProyectos:nth-child(8) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.imagenes .galeriaImgProyectos:nth-child(9) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+.imagenes .galeriaImgProyectos:nth-child(10) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.imagenes .galeriaImgProyectos:nth-child(11) {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+.imagenes .galeriaImgProyectos:nth-child(12) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .serviciosPag {
   padding: 40px;
   padding-top: 160px;
@@ -301,15 +359,6 @@
   padding-top: 40px;
   padding-bottom: 30px;
 }
-.sobreMiMain .sobreMiContenedor .infoContenedor .botonDescargarCv {
-  padding: 15px;
-  font-size: 18px;
-  border: none;
-  outline: 0px;
-  background: #565656;
-  border-radius: 3px;
-  cursor: pointer;
-}
 .sobreMiMain .sobreMiContenedor .infoImagen {
   width: 495px;
   border: 7px solid #565656;
@@ -349,13 +398,4 @@
   margin-bottom: 15px;
   border-radius: 3px;
   outline: 0px;
-}
-.contactoContainer .form .botonEnviar {
-  padding: 15px;
-  font-size: 15px;
-  border: none;
-  outline: 0px;
-  background: #B2B1B9;
-  border-radius: 3px;
-  cursor: pointer;
 }/*# sourceMappingURL=estilo.css.map */
