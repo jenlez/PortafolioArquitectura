@@ -3,7 +3,7 @@
     @include tamanos(100%,80px);
     background-color: $colorNegro;
     display: flex;
-    position: fixed;
+    position:fixed; z-index:1;
     padding: 5PX;
 
     .logo {
@@ -12,7 +12,6 @@
 
     .navbar {
         width: 100%;
-        z-index: 1;
 
         .menu {
             @include tamanos(100%,100%);
