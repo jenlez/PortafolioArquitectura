@@ -12,6 +12,7 @@
 
     .navbar {
         width: 100%;
+        z-index: 1;
 
         .menu {
             @include tamanos(100%,100%);
