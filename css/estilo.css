@@ -209,12 +209,16 @@
 }
 .footer .llamadoAccion .llamadoAccionTitulo {
   font-size: 25px;
+  font-weight: 400;
 }
 .footer .derechosAutor {
   background-color: #B2B1B9;
   padding: 20px;
   height: 100px;
   text-align: center;
+}
+.footer .derechosAutor tituloDerechosdeAutor {
+  font-size: 10px;
 }
 
 .portafolio .portafolioHeadings {

@@ -13,6 +13,7 @@
 
         .llamadoAccionTitulo {
             font-size: 25px;
+            font-weight: 400;
         }
 
         .llamadoAccionBoton {
@@ -20,11 +21,17 @@
         }
     }
 
-    .derechosAutor {
+    .derechosAutor{
         background-color: $colorGrisClaro;
         padding: 20px;
         height: 100px;
         text-align: center;
+
+        tituloDerechosdeAutor{
+            font-size: 10px; 
+        }
+        
+       
     }
 }
 
