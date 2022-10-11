@@ -1,7 +1,7 @@
 
 .encabezado {
     @include tamanos(100%,80px);
-    background-color: $colorNegro;
+    background-color: #212529;
     display: flex;
     position:fixed; z-index:1;
     padding: 5PX;

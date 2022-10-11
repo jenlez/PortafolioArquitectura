@@ -50,7 +50,7 @@
 .encabezado {
   width: 100%;
   height: 80px;
-  background-color: #171717;
+  background-color: #212529;
   display: flex;
   position: fixed;
   z-index: 1;
@@ -104,8 +104,8 @@
 
 #sobremi {
   max-width: 100%;
-  margin: auto;
-  padding: 100px;
+  margin: 30px;
+  padding: 15px;
   color: #171717;
   display: flex;
 }
@@ -150,11 +150,13 @@
   margin-bottom: 12px;
 }
 .tituloSeccionProyectos {
-  margin-left: 620px;
+  margin-top: 50px;
+  margin-left: 15px;
   margin-bottom: 50px;
 }
 
 .imagenes {
+  margin: 15px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -195,9 +197,6 @@
   font-size: 20px;
 }
 
-.footer {
-  padding: 20px;
-}
 .footer .llamadoAccion {
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
   background-blend-mode: multiply;

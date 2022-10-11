@@ -1,10 +1,12 @@
 .tituloSeccionProyectos {
-
-    margin-left: 620px;
+    
+    margin-top: 50px;
+    margin-left: 15px;
     margin-bottom: 50px;
 }
 
 .imagenes {
+    margin: 15px;
     @include tamanos(100%,100%);
     display: flex;
     padding: 30px;
